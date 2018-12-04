@@ -1,0 +1,9 @@
+difficulty = input("Chose a difficulty and then type it. Now easy medium or hard?")
+if difficulty == "easy":
+  print("You start with $" + str(1500))
+elif difficulty == "medium":
+    print('you start with $' + str(1000))
+elif difficulty == "hard":
+  print("you have $" + str(500))
+else:
+  print("you have not chosen one of the opptions you have to restart the game")
