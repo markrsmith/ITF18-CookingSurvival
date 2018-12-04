@@ -1,0 +1,13 @@
+#Cooking Code
+#Menu Items  
+print("The menu items are Deep Fried Flesh, Fries, Zombie Burger and The Green Machine")
+print("What would you like to eat?", end = " ")    
+response = str(input())    
+if response == "Deep Fried Flesh":
+ print("Deep Fried Flesh will be $3.00")
+if response == "Fries":
+ print("Fries are $2.00")
+if response == "Zombie Burger":
+ print("The Zombie Burger will be $5.00")
+if response == "Milkshake":
+ print("The Green Machine will be $3.50")
