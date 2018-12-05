@@ -1,0 +1,61 @@
+import random
+
+#Parts chance of breaking
+
+while True:
+  truckHealth = int(1000)
+  truckParts = random.randint(0,20)
+#Tires health
+  if truckParts <= 3:
+    truckHealth -= 50
+    print("Your tire pop. Your trucks health is", truckHealth, ". Do you want  someone to go get help? Y or N.", end = "")
+    tire = str(input())
+    if tire == 'y' or tire == 'Y':
+      truckHealth += 50
+      print("You sent one of your employees to get help. When they get back they replace your tire.")
+      print("Your truck health is back at", truckHealth, ".")
+    elif tire == 'n' or tire == 'n':
+      print("You can not move your truck.")
+    break
+#Windsheild health  
+  elif truckParts == 4:
+    truckHealth -= 100
+    print("Your windsheild shattered. Your trucks health is", truckHealth)
+    print(". Do you want someone to go get help? Y or N")
+    windSheild = str(input())
+    if windSheild == 'y' or windSheild == 'Y':
+      truckHealth += 100
+      print("You sent one of your employees to get help. When they get back they replace your windsheild.")
+      print("Your truck health is back at", truckHealth, ".")
+    elif windSheild == 'n' or windSheild == 'N':
+      print("You have zombies to worry about, and it's harder to drive.")
+    break
+#Axel health
+  elif truckParts == 5 or truckParts == 6:
+    truckHealth -= 300
+    print("Your axel broke. Your trucks health is", truckHealth ,".")
+    print("Do you want someone to go get help? Y or N.", end = "")
+    axel = str(input())
+    if axel == 'y' or axel == 'Y':
+      truckHealth += 300
+      print("You sent one of your employees to get help. When they get back they fix your axel.")
+      print("Your truck health is back at", truckHealth, ".")
+    elif axel == 'n' or axel == 'N':
+      print("Your truck cannot move.")
+    break
+#Ac isn't working
+  elif truckParts == 7 or truckParts == 8 or truckParts == 9:
+    truckHealth -= 250
+    print("Your ac stop working. your truck health is", truckHealth, ". Do you want to send someone to repair it? y or no. ", end = "")
+    air = str(input())
+    if air == 'y' or air == 'Y':
+      truckHealth += 250
+      print("You sent one of your employees to get help. When they get back they replace your ac.")
+      print("Your truck health is back at", truckHealth, ".")
+    elif air == 'n' or air == 'N':
+      print("The air starts heating up.")
+    break
+#Nothing went wrong   
+  elif truckParts >= 10:
+    print("Your truck health is", truckHealth)
+    break
