@@ -8,7 +8,7 @@ while True:
 #Tires health
   if truckParts <= 3:
     truckHealth -= 50
-    print("Your tired pop. Your trucks health is", truckHealth, ". Do you want  someone to go get help? Y or N.", end = "")
+    print("Your tire pop. Your trucks health is", truckHealth, ". Do you want  someone to go get help? Y or N.", end = "")
     tire = str(input())
     if tire == 'y' or tire == 'Y':
       truckHealth += 50
