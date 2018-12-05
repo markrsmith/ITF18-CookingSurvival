@@ -1,0 +1,30 @@
+# backstory to the food truck
+print("Welcome to Zombie Food Truck Survival!")
+ownerName = str(input("What is your name? "))
+restaurantStats = 'Apocalyptic Burger, established in the year of 2011, currently owned by', ownerName, 'and four other employees.'
+print("The year is 2011... you own a small restaurant called", restaurantStats)
+print(ownerName, "lead a normal life until the apocalypse striked in 2018.")
+print("Now in present day 2018, Apocalyptic Burger had to be transfered from a successful, standing business to a last-minute food truck.")
+print(" ")
+foodTruckName = str(input("Now that you have established a new type of business, it's time for a new business name! What would you like yours to be? "))
+print(foodTruckName, "... good choice!")
+print(" ")
+townName = str(input("What is your town name? "))
+print("You aren't satisfied with letting the zombies control what you do, so you plan to make enough money by hunting zombies and selling them to the remaining civilians of", townName, ".")
+print(" ")
+while True:
+  play = str(input("Would you like to play Zombie Food Truck Survival? You may press 'y' for yes, 'n' for no, or 'i' for instructions. ")) [0]
+  if play.lower() == "y":
+    print("Great!...") # when we have beggining of game, put it outside of the loop
+    break
+  if play.lower() == "n":
+    print("Understandable...")
+    break
+  elif play.lower() == "i":
+    print("This game will be broken up into sections of days. You will answer a series of questions which will determine what you accomplish everyday.")
+    print(" ")
+    print("At the start of each day, you will be provided a list of how many zombies you successfully hunted down and have in your storage in total, the amount of money that is in your Bank Account, and whether you have a broken car part to fix *inculding the cost to fix it*")
+    print("Customers will randomly appear and will appear with the order they would like.")
+    print(" ")
+  else:
+    print("I don't quite understand what you mean...")
