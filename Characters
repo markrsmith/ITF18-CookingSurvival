@@ -3,14 +3,18 @@ print("Choose a character class")
 print("Support Class")
 print("Defense Class")
 print("Attack Class")
-answer = str(input())
-if answer == 'Support Class':
-  print("Johnny Johnny \n Hp: 10 \n Weapon:Knife \n Damage: 10 damage every hit \n Abillity: Helps teamates gain health when lost. \n Ready to start? ")
-  end
-if answer == 'Defense Class':
-  print("Papa \n Hp: 20 \n Weapon:Gun \n Damage: 5 damage every bullet \n Abillity: Helps teamates defend the truck. \n Ready to start? ")
-  end
-if answer == 'Attack Class':
-  print("Racoon Super Mutant \n Hp: 15 \n Weapon:Sword of durags  \n Damage: 15 each swing if landed \n Abillity: Helps team gather food and money. \n ready to start?")
-  end
+print("*Input either support, defense, attack*")
+answer = str(input()) [0]
+while True:
+  if answer.lower() == 's':
+    print("Johnny Johnny \n Hp: 10 \n Weapon:Knife \n Damage: 10 damage every hit \n Abillity: Helps teamates gain health when lost. \n Ready to start? ")
+    break
+  elif answer.lower() == 'd':
+    print("Papa \n Hp: 20 \n Weapon:Gun \n Damage: 5 damage every bullet \n Abillity: Helps teamates defend the truck. \n Ready to start? ")
+    break
+  elif answer.lower() == 'a':
+    print("Racoon Super Mutant \n Hp: 15 \n Weapon:Sword of durags  \n Damage: 15 each swing if landed \n Abillity: Helps team gather food and money. \n ready to start?")
+    break
+  else:
+    print("I don't understand what you mean.")
   
