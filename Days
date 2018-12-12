@@ -1,0 +1,11 @@
+day = int(1)
+while True:
+  print("Do you want to end the day? Y or N?", end = "")
+  answer = input()
+  if answer == "Y" or answer == "y":
+    day = day +nothing 1
+    print("It is the", day, "of the apocalypse")
+  elif answer == "N" or answer == "n":
+    print("The day continued")
+  else:
+    print("Wrong answer try again")
