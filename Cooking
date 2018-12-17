@@ -1,0 +1,19 @@
+#Cooking
+def cooking_function(): 
+  print("Player would you like to start cooking? [Yes/No]") 
+  answer = str(input())
+  if answer == 'Yes': 
+    print("Okay, Select an item to cook") 
+  print("1. Deep Fried Flesh \n2. Zombie Fingers \n3. The Famous Zombie burger\n4. The Green Machine Milkshake")
+  answer = str(input())
+  if answer == '1':
+    print("The Deep Fried Flesh has been tossed into the grease traps!")
+  if answer == '2':
+    print("The Zombie Fingers has been tossed into the grease traps!") 
+  if answer == '3':
+    print("The Famous Zoombie Burger has been tossed into the grease traps!")
+  if answer == '4':
+    print("The Green Machine Milkshake has been tossed into the grease traps!") 
+  
+
+cooking_function()

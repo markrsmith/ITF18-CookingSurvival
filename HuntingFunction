@@ -1,0 +1,31 @@
+# importing the random variable
+def hunting():
+  import random
+  zombieFlesh = random.randint(1,15)
+  zombieFingers = random.randint(1,15)
+  zombieBrains = random.randint(1,15)
+
+  #if they would like instructions to hunting and how it is done
+  cookingInstructions = str(input("Would you like a quick walkthrough to the hunting procedure? ")) [0]
+  while True: 
+    if cookingInstructions.lower() == "y":
+      print("At the start of each day, your dog will go out and hunt zombies in your current area. Your entire restaurant revolves around the supply of Zombie Flesh and Zombie Fingers. It will vary how much inventory of each your dog will hunt down. Whatever your dog hunts down will be added to your Inventory. You will then see how much of each you have in total.")
+      print(" ")
+      break
+    elif cookingInstructions.lower() == "n":
+      print(" ")
+      print("Okay.")
+      print(" ")
+      break
+    else:
+      print("I don't understand what you mean.")
+      print(" ")
+      break
+# when inventory variable is created, make sure to the hunted to Inventory
+  print("You have hunted", zombieFlesh, "Zombie Flesh and added to your inventory." )
+  print("You have hunted", zombieFingers, "Zombie Fingers and added to your inventory.")
+  print("You have hunted", zombieBrains, "Zombie Brains and added to your inventory.")
+
+# ex.  to adding flesh etc to inventory
+#zombieFlesh + inventory = inventory
+hunting()
