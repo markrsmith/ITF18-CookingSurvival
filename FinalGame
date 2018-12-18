@@ -1,0 +1,381 @@
+import sys,time
+import random
+def print_slow(str): #credit to Isaiah + Ruben
+  for letter in str:
+    sys.stdout.write(letter)
+    sys.stdout.flush()
+    time.sleep(0.05)
+ # backstory to the food truck import random
+print("Welcome to Zombie Food Truck Survival!")
+ownerName = str(input(" What is your name? "))
+restaurantStats = 'Apocalyptic Burger, established in the year of 2011, currently owned by', ownerName, 'and four other employees.'
+print("The year is 2011... you own a small restaurant called", restaurantStats)
+print(ownerName, "lead a normal life until the apocalypse striked in 2018.")
+print("Now in present day 2018, Apocalyptic Burger had to be transfered from a successful, standing business to a last-minute food truck.")
+print(" ")
+foodTruckName = str(input("Now that you have established a new type of business, it's time for a new business name! What would you like yours to be? "))
+print(foodTruckName, "... good choice!")
+print(" ")
+townName = str(input("What is your town name? "))
+print("You aren't satisfied with letting the zombies control what you do, so you plan to make enough money by hunting zombies and selling them to the remaining civilians of", townName)
+#loop
+
+while True:
+  print("Would you like to play Zombie Food Truck Survival?") 
+  play = str(input("You may press 'y' for yes, 'n' for no, or 'i' for instructions. "))
+  if play.lower() == "y":
+    print("Great!...") # when we have beggining of game, put it outside of the loop
+    break
+  if play.lower() == "n":
+    print("Understandable...")
+    break
+  elif play.lower() == "i":
+    print("This game will be broken up into sections of days. You will answer a series of questions which will determine what you accomplish everyday.")
+    print(" ")
+    print("At the start of each day, you will be provided a list of how many zombies you successfully hunted down and have in your storage in total, the amount of money that is in your Bank Account, and whether you have a broken car part to fix *inculding the cost to fix it. Customers will randomly appear and will appear with the order they would like.")
+    print(" ")
+    
+  else:
+    print("I don't understand what you mean...")
+    break
+    
+#characters 
+print("Choose a character class to see their specialties")
+print("Support Class")
+print("Defense Class")
+print("Attack Class")
+
+while True:
+  answer = str(input("*Input either support, defense, attack*")) [0]
+  if answer.lower() == 's':
+    print("Johnny Johnny \n Hp: 10 \n Weapon:Knife \n Damage: 10 damage every hit \n Abillity: Helps teamates gain health when lost.")
+    readyToPlayAnswer = str(input("Ready to start?"))[0]
+    while True:
+      if readyToPlayAnswer.lower() == "y":
+        print("Okay.")
+        break
+      elif readyToPlayAnswer.lower() == "n":
+        print(" ") #Just a place holder so the code doesn't error
+        break
+      else:
+        print("I don't understand what you mean.")
+        break
+  elif answer.lower() == 'd':
+    print("Papa \n Hp: 20 \n Weapon:Gun \n Damage: 5 damage every bullet \n Abillity: Helps teamates defend the truck.")
+    readyToPlayAnswer = str(input("Ready to start?")) [0]
+    while True:
+      if readyToPlayAnswer.lower() == "y":
+        print("Okay.")
+        break
+      elif readyToPlayAnswer.lower() == "n":
+        print(" ")
+        break
+      else:
+        print("I don't understand what you mean.")
+        break
+  elif answer.lower() == 'a':
+    print("Racoon Super Mutant \n Hp: 15 \n Weapon:Sword of durags  \n Damage: 15 each swing if landed \n Abillity: Helps team gather food and money.")
+    readyToPlayAnswer = str(input("Ready to start?")) [0]
+    while True:
+      if readyToPlayAnswer.lower() == "y":
+        print("Okay.")
+        break
+      elif readyToPlayAnswer.lower() == "n":
+        print(" ")
+        break
+      else:
+        print("I don't understand what you mean.")
+        break
+  else:
+    print("I don't understand what you mean.")
+    break
+#Difficulty money
+
+while True:
+  difficulty = input("Chose a difficulty and then type it. Now easy, medium, or hard? ") [0]
+  if difficulty == "e":
+    print("You start with $" + str(1500))
+    money = 1500
+    break
+  elif difficulty == "m":
+    print('you start with $' + str(1000))
+    money = 1000
+    break
+  elif difficulty == "h":
+    print("you have $" + str(500))
+    money = 500
+    break
+  else:
+    print("I don't understand what you mean.")
+else:
+  print("you have not chosen one of the opptions you have to restart the game")
+#Starting town
+print("                                        _                   ")
+print("                                      _| |_                ")
+print("                                     |_   _|                     ")
+print("                                       | |                          ")
+print("                                       |_|                                                                                        ")
+print("                                       / \                              ")
+print("                                      /   \                                                                                        ")
+print("                                     /     \                                                                                      ")
+print("                                    /       \                                                                                     ")
+print("                                   /         \                                                                                     ")
+print("                                  /     _     \                                                                                   ")
+print("                                 /     (_)     \                                                                                  ")
+print("                                /               \                                                                                 ")
+print("                               /                 \                                                                                       ")
+print("                              /                   \                                                                               ")
+print("                             /                     \                                                                                ")
+print("                            /                       \                                                                              ")
+print("                           /_________________________\                                                                            ")
+print("                           |       ___________       |                                                                           ")
+print("                           |      {   (   )   }      |                                                                           ")
+print("                           |     |   |     |   |     |                                                                           ")
+print("                           |     |  (_______)  |     |                                                                           ")
+print("                           |_____|_____________|_____|              _____________________________________________________                                                             ")
+print("                          /                           \            |_____________________________________________________|              ")
+print("                         /                             \             |                                                  |                 ")
+print("                        /                               \            |    __     __     __     __     __     __     __  |                 ")
+print("                       /                                 \           |   |__|   |__|   |__|   |__|   |__|   |__|   |__| |                 ")
+print("                      /__________________________________ \          |    __     __     __     __     __     __     __  |             ")
+print("                     |                                     |         |   |__|   |__|   |__|   |__|   |__|   |__|   |__| |                ")
+print("                     |    _____                 _____      |         |    __     __     __     __     __     __     __  |                 ")
+print("                     |    |   |                 |   |      |         |   |__|   |__|   |__|   |__|   |__|   |__|   |__| |                 ")
+print("                     |    |   |        ___      |   |      |         |                      __                          |                 ")
+print("                     |    |___|       |  ,|     |___|      |         |                     | ,|                         |                 ")
+print("                     |________________|___|________________|         |_____________________|__|_________________________|                ")
+#Cooking Code
+
+#Menu Items 
+def menu_function(): 
+  import random
+  reponse = random.randint(1,4)
+  NPC = random.randint(1,9)
+  if NPC == 1:
+    NPC = "Max"
+  elif NPC == 2:
+    NPC = "Tybalt"  
+  elif NPC == 3:
+    NPC = "Tamar"
+  elif NPC == 4:
+    NPC = "Dr. Heimz Doofemshmirtz"
+  elif NPC == 5:
+    NPC = "Hans"
+  elif NPC == 6:
+    NPC = "Jürgen"
+  elif NPC == 7:
+    NPC = "Marcellus"
+  elif NPC == 8:
+    NPC = "Cornelius"
+  elif NPC == 9:
+    NPC = "Sister Perkins"
+    
+  print("The menu items are Deep Fried Flesh, Fries, Zombie Burger and The Green Machine.")
+  food = random.randint(1,4)
+  if food == 1:
+    food = "Deep Fried Flesh, which is $5.00"
+    money = money + 5
+  elif food == 2:
+    food = "Fries, which is $3.00"
+    money = money + 3
+  elif food == 3:
+    food = "The Zombie Burger, which is $6.00"
+    money = money + 6
+  elif food == 4:
+    food = "The Green Machine, which is $4.00"
+    money = money + 4
+
+  print(NPC, "has ordered", food)
+
+ #Parts chance of breaking
+def truck_Health():
+  truckHealth = int(1000)
+  truckParts = random.randint(0,20)
+  while True:
+#Tires health
+    if truckParts <= 3:
+      truckHealth -= 50
+      print("Your tire popped. Your trucks health is", truckHealth, ". Do you want someone to go get help? Y or N.", end = "")
+      money = money - 100
+      tire = str(input())
+      if tire.lower() == 'y':
+        truckHealth += 50
+        print("You sent one of your employees to get help. When they get back they replace your tire.")
+        print("Your truck health is back at", truckHealth, ".")
+        money = money - 150
+      elif tire.lower() == 'n':
+        print("You can not move your truck.")
+      break
+  #Windsheild health  
+    elif truckParts == 4:
+      truckHealth -= 100
+      print("Your windsheild shattered. Your trucks health is", truckHealth)
+      print(". Do you want someone to go get help? Y or N")
+      windSheild = str(input()) [0]
+      if windSheild.lower() == 'y':
+        truckHealth += 100
+        money  = money - 125
+        print("You sent one of your employees to get help. When they get back they replace your windsheild.")
+        print("Your truck health is back at", truckHealth, ".")
+      elif windSheild == 'n' or windSheild == 'N':
+        print("You have zombies to worry about, and it's harder to drive.")
+      break
+  #Axel health
+    elif truckParts == 5 or truckParts == 6:
+      truckHealth -= 300
+      print("Your axel broke. Your trucks health is", truckHealth ,".")
+      print("Do you want someone to go get help? Y or N.", end = "")
+      axel = str(input())
+      if axel.lower() == 'y':
+        truckHealth += 300
+        money = money - 100
+        print("You sent one of your employees to get help. When they get back they fix your axel.")
+        print("Your truck health is back at", truckHealth, ".")
+      elif axel.lower() == 'n':
+        print("Your truck cannot move.")
+      break
+  #Ac isn't working
+    elif truckParts == 7 or truckParts == 8 or truckParts == 9:
+      truckHealth -= 250
+      print("Your ac stop working. your truck health is", truckHealth, ". Do you want to send someone to repair it? y or no. ", end = "")
+      air = str(input())
+      if air.lower() == 'y':
+        truckHealth += 250
+        print("You sent one of your employees to get help. When they get back they replace your ac.")
+        print("Your truck health is back at", truckHealth, ".")
+      elif air.lower() == 'n':
+        print("The air starts heating up.")
+      break
+  #Nothing went wrong   
+    elif truckParts >= 10:
+      print("Your truck health is", truckHealth)
+      break
+
+
+print("                           ________________   ")
+print("                          |    ____        |________________             ")
+print("                          |   |____|       |_____________|_|")
+print("                          |    |__|        |_____________|_|")
+print("                          |    |__|        |_____________|_|")
+print("                          |____|__|________|")
+print("                              |      | ")
+print("                            __|______|___" )
+print("___________________________/_____________\______________________________")
+print("!      ___________        ____________                                  !")
+print("!     !___________!      !____________!       _________       _____   \ ")
+print("!                                            !   ___   !     !      \  \ ")
+print("!                                            !  !   !  !     !       \  \ ")
+print("!                                            !  !___!  !     !        \  \ ")
+print("!                                            !         !     !_________\  \ ")
+print("!                                            ! I       !     !          !  \ ")
+print("!                                            !         !     ! I        !   \____ ")
+print("!                                            !         !     !          !        ! ")
+print("!                                            !_________!     !__________!        ! ")
+print("!                                                                                ! ")
+print("!  _______________                                             ________________  ! ")
+print("! ! \ \ _____ / / !                                           ! \ \ _____ / / !  ! ")
+print("! !  \{       }/  !                                           !  \{       }/  !  ! ")
+print("! !  !         !  !___________________________________________!  !         !  !__! ")
+print("!_!   {       }                                                   {       }     ")
+print("       -------                                                     -------     ")
+print("                     /\ ")
+print("                    /  \ ")
+print("             ______/____\__")
+print("            (   __         )")
+print("           (   |. |         )")
+print("  () ______(   |__|          )")
+print("   (                          \                                                                 ")
+print("  (_______)                    \_______________________________________________________________             ")
+print("   (________                                            (MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM)     ")
+print("            \                                            (MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\  ")
+print("             \                                            (MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\ ")
+print("              \                                            (MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM|")
+print("               \                                            (MMMMMMMMMMMMM(MMMMMMMMMMMMMMMMMMMMMMM\ ")
+print("                \                                                          (MMMMMMMMMMMMMMMMMMMMMMM|")
+print("                |                                                           (MMMMMMMMMMMMMMMMMMMMMMM\ ")
+print("                |                                                                                    |")
+print("               (                                                                                      \ ")
+print("              (                                            ____________________             )  \       \  ")
+print("               (                                         /                      (          )    \       |")
+print("                (   ____________________________________(                        (        )      \      |                            ")
+print("                 |  |                                                             (__    |        \     |")
+print("                 |  |                                                                |   |         \    /")
+print("                 |  |                                                                |   |          \  / ")
+print("                 |  |                                                                |   |           \/")
+print("               __|  |                                                              __|   |             ")
+print("              (     |                                                             (      |             ")
+print("             {______|                                                            {_______|            ")
+print("________________________________________________________________________")
+print("!      ___________        ____________                                  !")
+print("!     !___________!      !____________!       _________       _____   \ ")
+print("!                                            !   ___   !     !      \  \ ")
+print("!                                            !  !   !  !     !       \  \ ")
+print("!                                            !  !___!  !     !        \  \ ")
+print("!                                            !         !     !_________\  \ ")
+print("!                                            ! I       !     !          !  \ ")
+print("!                                            !         !     ! I        !   \____ ")
+print("!                                            !         !     !          !        ! ")
+print("!                                            !_________!     !__________!        ! ")
+print("!                                                                                ! ")
+print("!  _______________                                             _________________ ! ")
+print("! ! \ \ _____ / / !                                           ! \ \ _____ / / !  ! ")
+print("! !  \{       }/  !                                           !  \{       }/  !  ! ")
+print("! !  !         !  !___________________________________________!  !         !  !__! ")
+print("!_!   {       }                                                   {       }     ")
+print("!      -------                                                     -------     ")
+#the settlement we are trying to get to
+print("   ___________________________________________________                                                               ")
+print("   |!|  _   _   _   _   _   _   _   _   _   _   _  |!|                                                               ")
+print("   |!| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |!|                                                               ")
+print("   |!|  _   _   _   _   _   _   _   _   _   _   _  |!|                                                               ")
+print("   |!| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |!|                                                               ")
+print("   |!|  _   _   _   _   _   _   _   _   _   _   _  |!|                                                             ")
+print("   |!| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |!|                                                          ")
+print("   |!|  _   _   _   _   _   _   _   _   _   _   _  |!|                                                          ")
+print("   |!| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |!|                                                            ")
+print("   |!|  _   _   _   _   _   _   _   _   _   _   _  |!|                                                               ")
+print("   |!| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |!|                                                               ")
+print("   |!|  _   _   _   _   _   _   _   _   _   _   _  |!|                                                                ")
+print("   |!| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |!|                                                             ")
+print("   |!|  _   _   _   _   _   _   _   _   _   _   _  |!|                                                            ")
+print("   |!| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |!|                                                       ")
+print("   |!|  _   _   _   _   _   _   _   _   _   _   _  |!|                                                 ")
+print(" _ |!| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |!|  _                                               ")
+print("|_||!|  _   _   _   _   _   _   _   _   _   _   _  |!| |_|                                              ")
+print(" | |!| |_| |_| |_| |_| |_| |,| |_| |_| |_| |_| |_| |!|  |   _ _                                            ")
+print(" | |_______________________|_|_______________________|  |  |___|")
+
+def settlement_function():
+  setttlement == print("end of game")
+  while True:
+    if money >= 2000:
+      print("Congratulations! You have bought the settlement and won the game")
+      settlement = complete
+    else:
+      print("You don't have enough money for the settlement.")
+      settlement = incomplete
+
+
+def day_function():
+  day = 1 
+  while True:
+    answer = str(input("Do you want to end the day? ")) [0]
+    if answer.lower() == 'y':
+      day = (day + 1)
+      print("It is day", day, "of the apocalypse")
+      break
+    elif answer.lower() == 'n':
+      print("Day", day, "continued.")
+      break
+    else:
+      print("Wrong answer, try again.")
+      break
+
+
+
+def daily_function():
+    truckHealth = int(1000)
+    truckParts = random.randint(0,20)
+#parts  
+while True:
+#Tires health
