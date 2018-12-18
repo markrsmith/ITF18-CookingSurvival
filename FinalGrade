@@ -1,0 +1,55 @@
+Grade for Project:
+
+Game Requirements
+
+Ten Points Each
+
+1.	Must have a defined genre with a plot/narrative/point
+    +8
+2.	Create & use at least 3 functions
+    3/3 = +10 (although they weren't used)
+3.	Make ASCII art (must be original)
+    +9 (the horse/dog seemed broken)
+4.	Have a life point system
+    +0
+5.	Have NPC interaction
+    +8 (never saw it though)
+6.	Use the random variable function
+    +10
+7.	Use while-loops
+    +10
+8.	Have distinct code blocks
+    +9
+9.	Comment above code blocks and elsewhere when necessary
+    +8
+10.	Have variable/identifiers that are self-evident (e.g., lifePoints = 20)
+    +10
+
+Bonus Features
+Five Points Each
+•	Have more than 3 characters
+  0
+•	Venture through more than 10 screens/sections/rooms
+  0
+•	Include a secret level
+  0
+
+------------------------------------------------------------------------------------------------------
+Total: 82
+
+
+Student who did more or less will have a different grade that what is added up to here
+
+Comments:
+
+Not sure why the game launched with an error because there was a random while True statement on line 380. Why are there single
+quotes where it says, "('Apocalyptic Burger, established in the year of 2011, currently owned by', 'Danny', 'and four other 
+employees.')." For that matter, why is that in parentheses? 
+
+I like the instructions you offer. Um, when I say I don't want to play Zombie Food Truck Survival, it says, "Understandable..."?.
+I'm stuck in the support, defense, attack. It just keeps looping. Your break on line 56 and subsequent ones are only breaking
+you out of one loop. Even once I added the need extra break on 63, which did break the loop if I chose support, it asked for
+difficulty and then just showed ASCII art and dropped me to a terminal. I see way more code but this was not glued together well.
+
+
+
